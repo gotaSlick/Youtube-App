@@ -5,8 +5,8 @@ const VideoListItem = ({video, onVideoSelect}) => {
     const imageURL = video.snippet.thumbnails.default.url;
     const videoTitle = video.snippet.title;
     return (
-        // it's where I pass the callback from index.js. Whenever it's clicked
-        // call that function with the video that it was passed
+        // it's where the callback is passed from index.js. Whenever it's clicked
+        // call that function with the video that it was passed in
         <li onClick={() => onVideoSelect(video)} className="list-group-item">
             <div className="video-list media">
                 <div className="media-left">
